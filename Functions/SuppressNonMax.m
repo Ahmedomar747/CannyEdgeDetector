@@ -5,9 +5,8 @@ height = size(MagImg,2);
 colors = size(MagImg,3);
 
 
-
 SuppressImg = zeros(size(MagImg));
-for cl = 1:colors
+
 for i = 2:width-1
     for j = 2:height-1
         if (MagImg(i,j) > 0)
@@ -18,7 +17,6 @@ for i = 2:width-1
             end
         end
     end
-end
 
 
 
